@@ -1,19 +1,19 @@
 
 ---
 
-### `main.py`
+
 
 ```python
 import time
 import re
 import requests
 
-# ================== CONFIG ==================
+
 DISCORD_TOKEN = "token"
 DISCORD_USER_ID = "discordid"
 PREFIX = "🎶 "
 POLL_INTERVAL = 2.5
-# ============================================
+
 
 last_status = ""
 current_lyrics = []
@@ -154,7 +154,7 @@ def main():
                 else:
                     print(f"→ {len(current_lyrics)} lignes de paroles chargées")
 
-            # Position actuelle
+            
             progress = time.time() - info["start"]
 
             current_line = ""
